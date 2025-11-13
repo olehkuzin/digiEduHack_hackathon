@@ -1,102 +1,102 @@
 [
   {
     "student_id": "Student_1",
-    "math": 61,
-    "physics": 56
+    "matika": 61,
+    "fyzika": 56
   },
   {
     "student_id": "Student_2",
-    "math": 62,
-    "physics": 57
+    "matika": 62,
+    "fyzika": 57
   },
   {
     "student_id": "Student_3",
-    "math": 63,
-    "physics": 58
+    "matika": 63,
+    "fyzika": 58
   },
   {
     "student_id": "Student_4",
-    "math": 64,
-    "physics": 59
+    "matika": 64,
+    "fyzika": 59
   },
   {
     "student_id": "Student_5",
-    "math": 65,
-    "physics": 60
+    "matika": 65,
+    "fyzika": 60
   },
   {
     "student_id": "Student_6",
-    "math": 66,
-    "physics": 61
+    "matika": 66,
+    "fyzika": 61
   },
   {
     "student_id": "Student_7",
-    "math": 67,
-    "physics": 62
+    "matika": 67,
+    "fyzika": 62
   },
   {
     "student_id": "Student_8",
-    "math": 68,
-    "physics": 63
+    "matika": 68,
+    "fyzika": 63
   },
   {
     "student_id": "Student_9",
-    "math": 69,
-    "physics": 64
+    "matika": 69,
+    "fyzika": 64
   },
   {
     "student_id": "Student_10",
-    "math": 70,
-    "physics": 65
+    "matika": 70,
+    "fyzika": 65
   },
   {
     "student_id": "Student_11",
-    "math": 71,
-    "physics": 66
+    "matika": 71,
+    "fyzika": 66
   },
   {
     "student_id": "Student_12",
-    "math": 72,
-    "physics": 67
+    "matika": 72,
+    "fyzika": 67
   },
   {
     "student_id": "Student_13",
-    "math": 73,
-    "physics": 68
+    "matika": 73,
+    "fyzika": 68
   },
   {
     "student_id": "Student_14",
-    "math": 74,
-    "physics": 69
+    "matika": 74,
+    "fyzika": 69
   },
   {
     "student_id": "Student_15",
-    "math": 75,
-    "physics": 70
+    "matika": 75,
+    "fyzika": 70
   },
   {
     "student_id": "Student_16",
-    "math": 76,
-    "physics": 71
+    "matika": 76,
+    "fyzika": 71
   },
   {
     "student_id": "Student_17",
-    "math": 77,
-    "physics": 72
+    "matika": 77,
+    "fyzika": 72
   },
   {
     "student_id": "Student_18",
-    "math": 78,
-    "physics": 73
+    "matika": 78,
+    "fyzika": 73
   },
   {
     "student_id": "Student_19",
-    "math": 79,
-    "physics": 74
+    "matika": 79,
+    "fyzika": 74
   },
   {
     "student_id": "Student_20",
-    "math": 80,
-    "physics": 75
+    "matika": 80,
+    "fyzika": 75
   }
 ]
