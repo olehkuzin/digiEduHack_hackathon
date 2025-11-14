@@ -100,6 +100,9 @@ async def analyst_chat(payload: AnalystChatRequest):
 
     choice = random.randint(1, 3)
 
+    # here call agent(payload.message)
+    # and agent returns basic answer (required), text_summary (opt.), chart_details (opt.)
+
     if choice == 1:
         return {
             "answer": answer,
@@ -154,6 +157,8 @@ async def upload_files(
         "Ingestion_time": datetime.now().isoformat(),
     }
 
+    print(metadata)
+
     dq = DataQualityProcessor()
     unique_filenames = []
 
@@ -178,8 +183,8 @@ async def upload_files(
             dq.process(unique_filename, metadata)
 
         except Exception as e:
-            # If any file fails, raise an exception
             print(e)
+            # If any file fails, raise an exception
             raise HTTPException(
                 status_code=500,
                 detail=f"Error processing file {file.filename}: {str(e)}",

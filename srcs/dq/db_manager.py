@@ -5,8 +5,9 @@ class MongoDBManager:
     """
     Handles saving processed data to MongoDB.
     """
+
     def __init__(self):
-        self.mongo_uri = "mongodb://mongoadmin:Hackathon2025@localhost:27017/"
+        self.mongo_uri = "mongodb://mongoadmin:Hackathon2025@mongo:27017/"
         self.db_name = "data_quality_service"
         self.collection_name = "records"
 
