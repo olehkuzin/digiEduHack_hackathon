@@ -1,0 +1,12 @@
+sentence-transformers
+qdrant-client
+pandas
+notebook
+openai
+ffmpeg-python
+vosk
+PyPDF2
+python-docx
+pymongo
+
+brew install ffmpeg 

@@ -4,3 +4,4 @@
 qdrant_storage
 *.ipynb
 *__pycache__
+*.Rhistory
