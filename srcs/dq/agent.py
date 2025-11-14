@@ -1,15 +1,16 @@
 from openai import OpenAI
 import os
 
+# Load API key for the Featherless endpoint from environment variables
 API_KEY = os.getenv("META_API_KEY")
 
-# print("Api key:", API_KEY)
-
+# Initialize OpenAI-compatible client for the Featherless API
 client = OpenAI(
     base_url="https://api.featherless.ai/v1",
     api_key=API_KEY,
 )
 
+# System prompt template for the analytical education-policy assistant
 prompt = """
 <prompt>
   <role>
@@ -30,6 +31,22 @@ prompt = """
 
 
 def call_agent(prompt: str, text: str) -> str:
+    """
+    Send text to the Llama-3.3-70B model using the Featherless API and return its response.
+
+    Parameters
+    ----------
+    prompt : str
+        System prompt defining the behavior and constraints of the model.
+    text : str
+        User-provided text to be analyzed.
+
+    Returns
+    -------
+    str
+        The model-generated summary or analytical output.
+    """
+    # Send the system and user messages to the model deterministically
     response = client.chat.completions.create(
         model='meta-llama/Llama-3.3-70B-Instruct',
         messages=[
@@ -38,4 +55,6 @@ def call_agent(prompt: str, text: str) -> str:
         ],
         temperature=0
     )
+
+    # Extract and return the model's output text
     return response.choices[0].message.content
