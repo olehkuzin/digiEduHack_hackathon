@@ -3,3 +3,4 @@
 *.venv
 qdrant_storage
 *.ipynb
+*__pycache__
