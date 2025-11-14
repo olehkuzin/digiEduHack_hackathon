@@ -67,7 +67,7 @@ class AnalystChatRequest(BaseModel):
     message: str
 
 
-CHART_DIR = Path("api_mockup/chart_samples")
+CHART_DIR = Path("srcs/api/chart_samples")
 CHART_PATHS = sorted(CHART_DIR.glob("debug_chart*.json"))
 
 print(CHART_PATHS)
@@ -151,7 +151,7 @@ async def upload_files(
         "Region": region,
         "School": school,
         "Activity": activity,
-        "Ingestion time": datetime.now().isoformat(),
+        "Ingestion_time": datetime.now().isoformat(),
     }
 
     dq = DataQualityProcessor()
@@ -179,6 +179,7 @@ async def upload_files(
 
         except Exception as e:
             # If any file fails, raise an exception
+            print(e)
             raise HTTPException(
                 status_code=500,
                 detail=f"Error processing file {file.filename}: {str(e)}",

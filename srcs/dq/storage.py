@@ -1,9 +1,9 @@
-from prompt import map_feature
+from srcs.dq.prompt import map_feature
 
 from qdrant_client import QdrantClient
 from qdrant_client.models import VectorParams, Distance, PointStruct
-import numpy as np
-from embedding import Embedding
+# import numpy as np
+# from embedding import Embedding
 import uuid
 
 class Storage:

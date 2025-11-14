@@ -2,7 +2,7 @@ import os
 
 from openai import OpenAI
 
-API_KEY = os.getenv("META_API_KEY")
+API_KEY = os.getenv("POETRY_META_API_KEY")
 
 client = OpenAI(
     base_url="https://api.featherless.ai/v1",

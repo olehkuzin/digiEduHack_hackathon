@@ -10,7 +10,9 @@ from srcs.dq.agent import call_agent, prompt
 # -------------------------------
 #  VOSK MODEL
 # -------------------------------
-VOSK_MODEL_PATH = "vosk-model-small-cs-0.4-rhasspy"
+
+# VOSK_MODEL_PATH = "vosk-model-small-cs-0.4-rhasspy"
+VOSK_MODEL_PATH = "srcs/dq/vosk-model-small-cs-0.4-rhasspy"
 model = Model(VOSK_MODEL_PATH)
 
 
